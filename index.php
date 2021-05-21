@@ -270,16 +270,8 @@
                             <div class="reviews__item">
                                 <div class="reviews__photo photo-2" style="background-image: url(<?php the_field( 'photo-2' ); ?>)"></div>
                                 <div class="reviews__content">
-                                    <div class="reviews__text">"Integer posuere erat a ante
-                                        venenatis dapibus posuere velit aliquet. Donec sed odio
-                                        dui. Aenean eu leo quam...Provident, perferendis
-                                        facilis?Quae mollitia quis voluptas dolore sunt quam, temporibus culpa magni id
-                                        iure
-                                        in
-                                        commodi pariatur soluta reiciendis vero odit? Recusandae eligendi maxime in odio
-                                        totam
-                                        ullam id obcaecati veniam optio!"</div>
-                                    <div class="reviews__author">Abram Mars, React Developer</div>
+                                    <div class="reviews__text"><?php the_field( 'reviews__text_2' ); ?></div>
+                                    <div class="reviews__author"><?php the_field( 'reviews__author_2' ); ?></div>
                                 </div>
                             </div>
                         </div>
@@ -288,21 +280,8 @@
                             <div class="reviews__item">
                                 <div class="reviews__photo photo-3" style="background-image: url(<?php the_field( 'photo-3' ); ?>)"></div>
                                 <div class="reviews__content">
-                                    <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed
-                                        do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                        Duis
-                                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat
-                                        nulla
-                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia
-                                        deserunt mollit anim id est laborum."</div>
-                                    <div class="reviews__author">Jack Lester, UI Designer</div>
+                                    <div class="reviews__text"><?php the_field( 'reviews__text_3' ); ?></div>
+                                    <div class="reviews__author"><?php the_field( 'reviews__author_3' ); ?></div>
                                 </div>
                             </div>
                         </div> 

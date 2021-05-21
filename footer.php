@@ -5,8 +5,6 @@
                     <h4 class="footer__title"><?php the_field( 'footer__title_1' ); ?></h4>
                     <address class="footer__address">
                         <p><?php the_field( 'footer__address' ); ?></p>
-                        <!-- <p>3481 Melrose Place</p>
-                        <p>Beverly Hills, CA 90210</p> -->
                     </address>
                 </div>
                 <div class="footer__block">
@@ -59,7 +57,6 @@
                 <div class="footer__block">
                     <h4 class="footer__title"><?php the_field( 'footer__title_3' ); ?></h4>
 
-
                     <ul class="social social--footer">
                         <li class="social__item">
                             <a class="social__link" href="https://www.facebook.com/" target="_blank">
@@ -90,10 +87,7 @@
         <div class="copyright">
             <div class="conatainer">
                 <div class="copyright__text">
-                <?php the_field( 'copyright__text' ); ?>
-                    <!-- <p>Copyright 2015 ActiveBox. All Rights Reserved</p>
-                    <p>Made by <span>Kamal Chaneman</span></p> -->
-                </div>
+                <?php the_field( 'copyright__text' ); ?></div>
             </div>
         </div>
     </footer>
