@@ -2,38 +2,28 @@
     <main>
         <div class="features">
             <div class="container" id="features">
+            
                 <div class="features__inner">
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_1' ); ?>" alt="">
-                        <h2 class="features__title"><?php the_field( 'features__title_1' ); ?></h2>
-                        <div class="features__text"><?php the_field( 'features__text_1' ); ?></div>
-                    </div>
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_2' ); ?>" alt="">
-                        <h4 class="features__title"><?php the_field( 'features__title_2' ); ?></h4>
-                        <div class="features__text"><?php the_field( 'features__text_2' ); ?></div>
-                    </div>
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_3' ); ?>" alt="">
-                        <h4 class="features__title"><?php the_field( 'features__title_3' ); ?></h4>
-                        <div class="features__text"><?php the_field( 'features__text_3' ); ?></div>
-                    </div>
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_4' ); ?>" alt="">
-                        <h4 class="features__title"><?php the_field( 'features__title_4' ); ?></h4>
-                        <div class="features__text"><?php the_field( 'features__text_4' ); ?></div>
-                    </div>
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_5' ); ?>" alt="">
-                        <h4 class="features__title"><?php the_field( 'features__title_5' ); ?></h4>
-                        <div class="features__text"><?php the_field( 'features__text_5' ); ?></div>
-                    </div>
-                    <div class="features__items">
-                        <img class="features__icon" src="<?php the_field( 'features__icon_6' ); ?>" alt="">
-                        <h4 class="features__title"><?php the_field( 'features__title_6' ); ?></h4>
-                        <div class="features__text"><?php the_field( 'features__text_6' ); ?></div>
-                    </div>
+                    
+                    <?php
+                        $featured_posts = get_field('features__items');
+                        if( $featured_posts ): ?>
+                            <ul class="features__inner">
+                            <?php foreach( $featured_posts as $post ): 
+                                setup_postdata($post); ?>
+                                <li class="features__items">
+                                    <img class="features__icon" src="<?php the_field( 'features__icon' ); ?>" alt="">
+                                    <h4 class="features__title"><?php the_field( 'features__title' ); ?></h4>
+                                    <div class="features__text"><?php the_field( 'features__text' ); ?></div>
+                                </li>
+                            <?php endforeach; ?>
+                            </ul>
+                            <?php 
+                            wp_reset_postdata(); ?>
+                    <?php endif; ?>
+
                 </div>
+
             </div>
         </div>
         <!--/.features-->
