@@ -43,7 +43,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 1000;
-    background: #31344e url("../img/Header/header-bg.jpg");
+    background: #31344e;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,6 +346,7 @@ body {
 =========================*/
 .features {
     height: 100vh;
+    margin: 3em 0;
 }
 
 .features__inner {
@@ -366,6 +367,10 @@ body {
     margin-bottom: 25px;
     transform: scale(1);
     transition: .3s linear;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .features__icon:hover {
@@ -391,6 +396,10 @@ body {
 
 .works {
     height: 100vh;
+}
+
+.works__inner {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -415,6 +424,10 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .works__content {
@@ -450,6 +463,7 @@ body {
 =========================*/
 .team {
     height: 100vh;
+    margin: 3em 0;
 }
 
 .team__inner {
@@ -471,23 +485,12 @@ body {
 .team__photo {
     width: 100%;
     height: 250px;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 1.2em;
-}
 
-.team__photo_1 {
-    background-image: url();
-}
-.team__photo_2 {
-    background-image: url();
-}
-.team__photo_3 {
-    background-image: url();
-}
-.team__photo_4 {
-    background-image: url();
+    margin-bottom: 1.2em;
 }
 
 .team__name {

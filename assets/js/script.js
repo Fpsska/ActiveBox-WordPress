@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
 });
 
-// //*********/.SLIDER*********//
+// //*=========/.SLIDER ========*//
 
 $(document).ready(function () {
     burgerMenu.click(function () {
@@ -87,4 +87,23 @@ $(document).ready(function () {
     });
 });
 
-// //*********/.BURGER*********//
+// //*=========/.BURGER ========*//
+
+let team = $("#team");
+let teamItem = $(".team__item");
+let teamInner = $(".team__inner");
+
+let features = $(".features");
+let featuresItem = $(".features__items");
+
+$(document).ready(function () {
+    if (teamItem.length >= 5) {
+        team.css({ height: "auto" });
+        teamInner.css({ gap: "1em 0" });
+    }
+    if (featuresItem.length >= 6) {
+        features.css({ height: "auto" });
+    }
+});
+
+// //*=========/.TEAM ========*//

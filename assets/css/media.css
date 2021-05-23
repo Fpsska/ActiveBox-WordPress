@@ -23,13 +23,13 @@
 
     .team {
         height: 100vh;
-        margin: 0;
-    }
-    .team__item:nth-child(4) {
-        margin: 0;
     }
     .team__photo {
         margin: 0 auto 0.5em auto;
+    }
+
+    .reviews__text {
+        font-size: 1.5em;
     }
 }
 
@@ -74,7 +74,6 @@
 
     .team {
         height: 100vh;
-        margin: 0;
     }
 
     .reviews {
@@ -88,7 +87,7 @@
         padding: 0.5em 0.5em 0.3em 0.5em;
     }
     .reviews__text {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: 0 0 0.5em 0;
     }
     .slick-dots {
@@ -267,6 +266,10 @@
         width: 50%;
         margin: 0;
         padding: 0.5em 0.5em;
+    }
+
+    .reviews__text {
+        font-size: 1em;
     }
 }
 
